@@ -1,5 +1,1 @@
-# RailsCasts Episode #136: jQuery & Ajax (revised)
-
-http://railscasts.com/episodes/136-jquery-ajax-revised
-
-Requires Ruby 1.9.2 or higher.
+This is a sample app that uses ajax to complete actions without reloading the page.
