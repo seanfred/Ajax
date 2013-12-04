@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-AjaxifiedScaffold::Application.load_tasks
+Ajax::Application.load_tasks
