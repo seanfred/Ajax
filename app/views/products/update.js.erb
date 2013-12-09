@@ -2,7 +2,7 @@ $('.edit_product').remove();
 
 <% if @product.errors.count.zero? %>
   $("#<%= dom_id @product %>").remove();
-  $('#products').append('<%= j render("product", :product => @product) %>');
+  $('#products').append('<%= j render(@product) %>');
 <% else %>
   $('#new_product_link').hide().after('<%= j render("form") %>');
 <% end %>
