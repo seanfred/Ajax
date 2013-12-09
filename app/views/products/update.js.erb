@@ -1,11 +1,8 @@
-<% if @product.errors.count == 0 %>
-
-$('#new_product_link').hide().after('<%= j render("form") %>');
-
-<% else %>
-
 $('.edit_product').remove();
-$('#new_product_link').after('<%= j render("form") %>');
 
+<% if @product.errors.count.zero? %>
+  $("#<%= dom_id @product %>").remove();
+  $('#products').append('<%= j render(@product) %>');
+<% else %>
+  $('#new_product_link').hide().after('<%= j render("form") %>');
 <% end %>
-
